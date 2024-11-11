@@ -4,8 +4,8 @@ import axios from 'axios'
 import CryptoJS from 'crypto-js'
 
 const api = axios.create({
-	// baseURL: import.meta.env.VITE_API_URL,
-	baseURL: '/api',
+	baseURL: import.meta.env.VITE_API_URL,
+	// baseURL: '/api',
 	withCredentials: true,
 	validateStatus: status => status !== 401 && status <= 500,
 })
