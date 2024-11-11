@@ -18,14 +18,13 @@ export default defineConfig(({ mode }) => {
 			host: true,
 			port: 7777,
 			strictPort: true,
-			// proxy: {
-			// 	'/api': {
-			// 		target: env.VITE_API_URL,
-			// 		changeOrigin: true,
-			// 		rewrite: path => path.replace(/^\/api/, ''),
-			// 	},
-			// 	// '/api': env.VITE_API_URL,
-			// },
+			proxy: {
+				'/api': {
+					target: env.VITE_API_URL,
+					changeOrigin: true,
+					rewrite: path => path.replace(/^\/api/, ''),
+				},
+			},
 		},
 		esbuild: {
 			keepNames: true,
