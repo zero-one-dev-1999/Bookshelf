@@ -1,0 +1,3 @@
+const APP_AUTH_LOGIN = 'APP::AUTH_LOGIN'
+
+export { APP_AUTH_LOGIN }
