@@ -3,8 +3,8 @@ import { appActions } from '@/store/actions'
 import axios from 'axios'
 import CryptoJS from 'crypto-js'
 
+// baseURL: import.meta.env.VITE_API_URL,
 const api = axios.create({
-	// baseURL: import.meta.env.VITE_API_URL,
 	baseURL: '/api',
 	withCredentials: true,
 	validateStatus: status => status !== 401 && status <= 500,

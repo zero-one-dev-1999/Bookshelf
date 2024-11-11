@@ -26,6 +26,11 @@ export default defineConfig(({ mode }) => {
 				},
 			},
 		},
+		build: {
+			define: {
+				'process.env.VITE_API_URL': JSON.stringify(env.VITE_API_URL),
+			},
+		},
 		esbuild: {
 			keepNames: true,
 		},
