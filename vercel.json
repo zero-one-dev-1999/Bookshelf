@@ -1,5 +1,6 @@
 {
 	"rewrites": [
-		{ "source": "/api/(.*)", "destination": "https://no23.lavina.tech/(.*)" }
+		{ "source": "/api/(.*)", "destination": "/api" },
+		{ "source": "/(.*)", "destination": "/" }
 	]
 }
