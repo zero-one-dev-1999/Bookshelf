@@ -6,6 +6,8 @@ import { BrowserRouter } from 'react-router-dom'
 import { setLocale } from 'yup'
 import { ConfirmProvider } from 'material-ui-confirm'
 import Router from './routes'
+import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from 'react-toastify'
 
 setLocale({
 	mixed: {
@@ -20,6 +22,7 @@ function App() {
 				<BrowserRouter>
 					<ConfirmProvider>
 						<Stack spacing={2} direction='row'>
+							<ToastContainer />
 							<Router />
 						</Stack>
 					</ConfirmProvider>

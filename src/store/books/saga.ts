@@ -10,6 +10,7 @@ import {
 	BOOKS_UPDATE,
 } from './actionTypes'
 import { IBook } from './reducer'
+import { toastSuccessAction } from '@/utils/toast-messages'
 
 function* booksFetchSaga() {
 	try {
@@ -45,6 +46,7 @@ function* booksCreateSaga({ payload }: { payload: { isbn: string } }) {
 		if (response.isOk) {
 			yield put(booksActions.resetForm())
 			yield put(booksFetchDataAction())
+			yield call(toastSuccessAction, response.message)
 		}
 	} finally {
 		yield put(booksActions.setFormLoading(false))
@@ -61,6 +63,7 @@ function* booksDeleteSaga({ payload }: { payload: number }) {
 
 		if (response.isOk) {
 			yield put(booksActions.setData(response.data))
+			yield call(toastSuccessAction, response.message)
 		}
 	} finally {
 		yield put(booksActions.setDataLoading(false))
@@ -79,6 +82,7 @@ function* booksUpdateSaga({ payload }: { payload: IBook }) {
 
 		if (response.isOk) {
 			yield put(booksActions.updateData(response.data))
+			yield call(toastSuccessAction, response.message)
 		}
 	} finally {
 		yield put(booksActions.setDataLoading(false))

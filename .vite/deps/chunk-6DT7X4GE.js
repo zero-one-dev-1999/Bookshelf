@@ -27,7 +27,7 @@ import {
   rootOverridesResolver,
   useFormControl,
   useSlot
-} from "./chunk-HGBS2Y7M.js";
+} from "./chunk-62YKIB5E.js";
 import {
   capitalize_default,
   createSvgIcon,
@@ -40,12 +40,11 @@ import {
   useDefaultProps,
   useEnhancedEffect_default,
   useForkRef_default
-} from "./chunk-TXAYCEYG.js";
+} from "./chunk-OHTLAOBO.js";
 import {
   HTMLElementType,
   alpha,
   chainPropTypes,
-  clsx_default,
   composeClasses,
   createChainedFunction,
   deepmerge,
@@ -71,13 +70,16 @@ import {
   useRtl,
   useSlotProps_default,
   useTheme
-} from "./chunk-5ZEAUMGD.js";
+} from "./chunk-WIQE3GTV.js";
+import {
+  require_jsx_runtime
+} from "./chunk-Y64DX5DL.js";
 import {
   require_prop_types
 } from "./chunk-KSVC6TPA.js";
 import {
-  require_jsx_runtime
-} from "./chunk-Y64DX5DL.js";
+  clsx_default
+} from "./chunk-2KHBIA62.js";
 import {
   require_react
 } from "./chunk-7JZAKNLV.js";
@@ -8307,4 +8309,4 @@ export {
   textFieldClasses_default,
   TextField_default
 };
-//# sourceMappingURL=chunk-XWBCJXFS.js.map
+//# sourceMappingURL=chunk-6DT7X4GE.js.map

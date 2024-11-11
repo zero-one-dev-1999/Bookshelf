@@ -1,5 +1,6 @@
 import { store } from '@/store'
 import { appActions } from '@/store/actions'
+import { toastErrorAction } from '@/utils/toast-messages'
 import axios from 'axios'
 import CryptoJS from 'crypto-js'
 
@@ -35,9 +36,9 @@ api.interceptors.request.use(config => {
 api.interceptors.response.use(
 	response => {
 		if (!(response.data instanceof Blob)) {
-			// if (isCodeError(response.data) || !response.data.status) {
-			// 	store.dispatch(snackbarErrorAction(response.data.message))
-			// }
+			if (!response.data.isOk) {
+				toastErrorAction(response.data.message)
+			}
 		}
 		return response
 	},

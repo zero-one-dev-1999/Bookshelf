@@ -2,14 +2,17 @@ import {
   _extends
 } from "./chunk-HQ6ZTAWL.js";
 import {
+  require_jsx_runtime
+} from "./chunk-Y64DX5DL.js";
+import {
   require_prop_types
 } from "./chunk-KSVC6TPA.js";
 import {
   require_hoist_non_react_statics_cjs
 } from "./chunk-ERWNHSXD.js";
 import {
-  require_jsx_runtime
-} from "./chunk-Y64DX5DL.js";
+  clsx_default
+} from "./chunk-2KHBIA62.js";
 import {
   require_react
 } from "./chunk-7JZAKNLV.js";
@@ -901,22 +904,6 @@ function appendOwnerState(elementType, otherProps, ownerState) {
   };
 }
 var appendOwnerState_default = appendOwnerState;
-
-// node_modules/clsx/dist/clsx.mjs
-function r(e) {
-  var t, f, n = "";
-  if ("string" == typeof e || "number" == typeof e) n += e;
-  else if ("object" == typeof e) if (Array.isArray(e)) {
-    var o = e.length;
-    for (t = 0; t < o; t++) e[t] && (f = r(e[t])) && (n && (n += " "), n += f);
-  } else for (f in e) e[f] && (n && (n += " "), n += f);
-  return n;
-}
-function clsx() {
-  for (var e, t, f = 0, n = "", o = arguments.length; f < o; f++) (e = arguments[f]) && (t = r(e)) && (n && (n += " "), n += t);
-  return n;
-}
-var clsx_default = clsx;
 
 // node_modules/@mui/utils/esm/extractEventHandlers/extractEventHandlers.js
 function extractEventHandlers(object, excludeKeys = []) {
@@ -8925,7 +8912,6 @@ export {
   generateUtilityClasses,
   clamp_default,
   appendOwnerState_default,
-  clsx_default,
   extractEventHandlers_default,
   mergeSlotProps_default,
   resolveComponentProps_default,
@@ -9026,4 +9012,4 @@ react-is/cjs/react-is.development.js:
    * LICENSE file in the root directory of this source tree.
    *)
 */
-//# sourceMappingURL=chunk-5ZEAUMGD.js.map
+//# sourceMappingURL=chunk-WIQE3GTV.js.map
